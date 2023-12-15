@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQs</title>
+        <link rel="stylesheet" href="../CSS/HeaderStyle.css">
+        <link rel="stylesheet" href="../CSS/FAQ.css">
+        <script src="../javaScript/FAQs.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="flexCol">
+            <nav class="flex">
+                <!--Logo-->
+                <img src="../images/CelticKnotLogoTanBack.png" id="logo" alt="Celtic Logo">
+                <!--Shop name-->
+                <h1 id="Name">Celtic Chic Boutique</h1>
+                <!--navigation links-->
+                <nav id="links" class="flex">
+                    <a href="../index.html" class="navButton navLink">Home</a>
+                    <a href="aboutus.html" class="navButton navLink">About Us</a>
+                    <a href="shop.html" class="navButton navLink">Shop</a>
+                    <a href="Contact.html" class="navButton navLink">Contact</a>
+                    <a href="" class="navButton selected" id="selectedButton">FAQs</a>
+                </nav>
+            </nav>
+            <!--secondary header-->
+            <section id="secondaryHeader">
+                <h2>The place for all your favorite Celtic inspired items!</h2>
+            </section>
+        </header>
+
+        <!--Main Content-->
+        <main>
+            <aside id="one">
+                <section class="questionBox">
+                    <h3 class="question">What is your return policy?</h3>
+                    <button onclick="toggleHide('answer1', 0)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer1">We allow returns up to 30 days after your package arrives as long
+                    as all clothing is unworn and kitchen ware is unused.</p>
+            </aside>
+
+            <aside id="two">
+                <section class="questionBox">
+                    <h3 class="question">Do you ship outside the U.S.?</h3>
+                    <button onclick="toggleHide('answer2', 1)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer2">We currently do not ship outside of the U.S. We are
+                    still a fairly small business and are working to expand our 
+                    shipping capabilities.</p>
+            </aside>
+
+            <aside id="three">
+                <section class="questionBox">
+                    <h3 class="question">How long does it for my order to ship?</h3>
+                    <button onclick="toggleHide('answer3', 2)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer3">It takes us about 2-3 days to ship out the order
+                    and then it takes up to a week or two for the package to be
+                    delivered.</p>
+            </aside>
+
+            <aside id="four">
+                <section class="questionBox">
+                    <h3 class="question">Do you offer more than one shipping option?</h3>
+                    <button onclick="toggleHide('answer4', 3)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer4">Yes, we offer normal shipping, expedited shipping,
+                    and a gift package where we wrap the gift for you.</p>
+            </aside>
+
+            <aside id="five">
+                <section class="questionBox">
+                    <h3 class="question">Do the clothing items typically fit to size?</h3>
+                    <button onclick="toggleHide('answer5', 4)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer5">Yes, we have recieved a lot of feedback from
+                    customers that our sizing is very accurate to what you would
+                    expect.</p>
+            </aside>
+
+            <aside id="six">
+                <section class="questionBox">
+                    <h3 class="question">How do I track my order?</h3>
+                    <button onclick="toggleHide('answer6', 5)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer6">After your purchase has gone through you should
+                    receive a confirmation email that contains a tracking number.</p>
+            </aside>
+
+            <aside id="seven">
+                <section class="questionBox">
+                    <h3 class="question">What payment methods do you accept?</h3>
+                    <button onclick="toggleHide('answer7', 6)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer7">Currently we accept Visa, Mastercard, and PayPal.</p>
+            </aside>
+
+            <aside id="eight">
+                <section class="questionBox">
+                    <h3 class="question">There is a problem with my order, who
+                        do I contact about it?</h3>
+                    <button onclick="toggleHide('answer8', 7)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer8">You can contact us through email at
+                    CelticChicInfo@CelticChic.com.</p>
+            </aside>
+
+            <aside id="nine">
+                <section class="questionBox">
+                    <h3 class="question">Do you offer shipping insurance?</h3>
+                    <button onclick="toggleHide('answer9', 8)" class="icon">+</button>
+                </section>
+                <p class="answer" id="answer9">We do not offer shipping insurance, however most postal
+                    services do and you can insure it by providing them with your tracking number.</p>
+            </aside>
+
+            <span id="ten">
+                
+            </span>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="../images/CelticKnotLogoTanBack.png" alt="Celtic Logo" class="footer-logo">
+            <p>&copy; 2023 Celtic Chic Boutique. All rights reserved. Fill your Closet with Celtic Modern and Classic Pieces - Shop at Celtic Chic Boutique</p>
+        </footer>
+    </body>
+</html> 

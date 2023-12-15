@@ -1,0 +1,93 @@
+
+main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(10, auto); 
+    grid-template-areas: 
+        'left one one right'
+        'left two two right'
+        'left three three right'
+        'left four four right'
+        'left five five right'
+        'left six six right'
+        'left seven seven right'
+        'left eight eight right'
+        'left nine nine right'
+        'left ten ten right'
+        ;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#ten {
+    grid-area: ten;
+    height: 90px;
+}
+
+.questionBox {
+    background-color: #F59F01;
+    border-radius: 30px 30px 30px 30px;
+    color: #1B5110;
+    margin: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    font-size: 20pt;
+    background-color: #E8E4B5;
+    color:#1B5110;
+    height: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 15px;
+    visibility: hidden; 
+}
+
+.icon {
+    font-size: 30pt;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    color:#1B5110;
+}
+
+.question {
+    margin: 15px;
+}

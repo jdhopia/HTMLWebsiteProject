@@ -1,0 +1,172 @@
+
+html {
+    font-family: sitka banner;
+    padding: 0px;
+}
+
+/* body section */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1B5110;
+}
+
+/* Creates flex box in row direction */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+/* creates flex box in column direction */
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adds padding to navigation */
+.navButton {
+    padding: 0px;
+}
+
+/* Styles the selected nav button */
+#selectedButton {
+    background-color:#1B5110;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    color:#E8E4B5;
+    height: 45px;
+}
+
+/* Ensures the styling for selected button doesn't change once visited */
+#selectedButton:visited {
+    background-color: #F59F01;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    color:#1B5110;
+    height: 45px;
+}
+
+/* Styles smaller header */
+#secondaryHeader {
+    background-color: #F59F01;
+    color:#1B5110;
+    font-family: sitka banner;
+    padding-left: 2%;
+    margin-bottom: 0px;
+}
+
+/* Styles shop name */
+#Name {
+    font-family: papyrus;
+    color:#1B5110;
+    margin: 0px;
+}
+
+/* Styles logo */
+#logo {
+    width: 4%;
+    height: 3%;
+    align-self: center;
+}
+
+/* Styles header element */
+header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* styles nav element */
+nav {
+    background-color: #E8E4B5;
+}
+
+/* styles links */
+a {
+    color:#1B5110;
+    text-decoration: none;
+    justify-self: end;
+    font-size: 200%;
+    white-space: nowrap;
+}
+
+/* keeps styling the same even when a link has been visitied */
+:visited {
+    color:#1B5110;
+    text-decoration: none;
+}
+
+/* styles footer logo */
+.footer-logo{
+    height: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+/* styles footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e4b5;
+    color: #1b5110;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* styles footer text */
+footer p {
+    margin: 0;
+}
+
+/* styles the links */
+#links {
+    flex-wrap: nowrap;
+    margin-left: 5%;
+}
+
+/* styles the nav links */
+.navLink {
+    margin: 2%;
+    margin-bottom: 0px;
+}
+
+/* styles the top level header */
+h1 {
+    white-space: nowrap;
+    margin-bottom: 0px;
+}
+
+/* Header is responsive at 720px */
+@media screen and (max-width: 721px) {
+    header {
+        font-size: smaller;
+    }
+}
+
+/* Header is responsive at 480px */
+@media screen and (max-width: 481px) {
+    header {
+        font-size: 7pt;
+    }
+
+    #selectedButton {
+        height: 20px;
+    }
+
+    #selectedButton:visited {
+        height: 20px;
+    }
+}
+
+/* Header is responsive at 400px */
+@media screen and (max-width: 401px) {
+    header {
+        font-size: 6pt;
+    }
+}

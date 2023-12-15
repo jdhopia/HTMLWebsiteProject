@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="../CSS/HeaderStyle.css">
+        <link rel="stylesheet" href="../CSS/ContactStyle.css">
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header class="flexCol">
+            <nav class="flex">
+                <!--Logo-->
+                <img src="../images/CelticKnotLogoTanBack.png" id="logo" alt="Celtic Logo">
+                <!--Shop name-->
+                <h1 id="Name">Celtic Chic Boutique</h1>
+                <!--navigation links-->
+                <nav id="links" class="flex">
+                    <a href="../index.html" class="navButton navLink">Home</a>
+                    <a href="aboutus.html" class="navButton navLink">About Us</a>
+                    <a href="shop.html" class="navButton navLink">Shop</a>
+                    <a href="" class="navButton selected" id="selectedButton">Contact</a>
+                    <a href="FAQs.html" class="navButton navLink">FAQs</a>
+                </nav>
+            </nav>
+            <!--secondary header-->
+            <section id="secondaryHeader">
+                <h2>Learn how to contact us!</h2>
+            </section>
+        </header>
+
+        <!--main content-->
+        <main>
+            <!--Top Half of Page-->
+            <aside class="contactFlex topHalf">
+                <!--Logo(left side of page)-->
+                <aside id="image">
+                    <img src="../images/CelticKnotLogoGreenBack.png" id="greenKnot" alt="Celtic Logo">
+                </aside>
+
+                <!--Contact infor(right side of page)-->
+                <aside class="contactFlexCol contactInfo">
+                    <h2 class="header">Contact Us</h2>
+                    <p class="info">Email: CelticChicInfo@CelticChic.com</p>
+                    <p class="info">Phone: (612) - 554 - 3243</p>
+                    <p class="info">Instagram: @CelticChicBoutique</p>
+                </aside>
+            </aside>
+
+            <!--Bottom Half of Page-->
+            <aside class="bottomHalf contactFlex">
+                <!--form for joining newsletter-->
+                <form>
+                    <fieldset>
+                        <legend>Sign up for our newsletter!</legend>
+
+                        <!--First Name-->
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName">
+                        <br>
+
+                        <!--Last Name-->
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName">
+                        <br>
+
+                        <!--Email-->
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email">
+                        <br>
+
+                        <!--Get updates on coupons and deals-->
+                        <label>Would you like to recieve emails about our new deals and coupons?</label>
+                        <ul>
+                            <label for="yes" hidden>Yes</label>
+                            <li><input type="radio" name="emailList" value="yes" id="yes">Yes</li>
+                            <label for="no" hidden>No</label>
+                            <li><input type="radio" name="emailList" value="no" id="no">No</li>
+                        </ul>
+                    </fieldset>
+                    <!--submit-->
+                    <fieldset class="flex submit">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
+            </aside>
+        </main>
+       
+        <!-- Footer -->
+        <footer>
+            <img src="../images/CelticKnotLogoTanBack.png" alt="Celtic Logo" class="footer-logo">
+            <p>&copy; 2023 Celtic Chic Boutique. All rights reserved. Fill your Closet with Celtic Modern and Classic Pieces - Shop at Celtic Chic Boutique</p>
+        </footer>
+
+    </body>
+</html>

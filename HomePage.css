@@ -1,0 +1,153 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* top section of main content with blurb */
+#topSection {
+    width: 80%;
+    background-color: #E8E4B5;
+    border-radius: 30px;
+    align-self: center;
+    padding: 1%;
+    font-size: 20pt;
+    margin-top: 3%;
+    text-align: center;
+    color: #1B5110;
+}
+
+/* middle section that includes an image and featured items list */
+#middleSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* the image of a blue shawl */
+#blueShawl {
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+/* the featured items list */
+#featuredItems {
+    width: 30%;
+    background-color: #E8E4B5;
+    color: #1B5110;
+    font-size: 20pt;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding-left: 3%;
+}
+
+/* Table section */
+#tableSection {
+    margin: 50px;
+    display: table;
+    border-collapse: collapse;
+    width: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #E8E4B5;
+    margin: 3% auto;
+    text-align: center;
+    height: 75%;
+}
+
+/*Rows/columns in the table*/
+#tableSection table {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*Cell Settings*/
+#tableSection td {
+    border: 1px solid #1B5110;
+    padding: 10px;
+}
+
+/* Image section */
+#imageSection {
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+/*Image Settings*/
+#imageSection img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Bottom section spacing*/
+#bottomsection{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 75px;
+}
+
+/* responsive to 720px wide screen */
+@media screen and (max-width: 721px) {
+    #blueShawl {
+        width: 40%;
+        height: 50%;
+        align-self: center;
+    }
+
+    #featuredItems {
+        width: 40%;
+        font-size: 16pt;
+    }
+
+    #tableSection {
+        width: 50%;
+        margin: 3% auto;
+    }
+
+    #tableSection table {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #imageSection img {
+        max-width: 70%;
+    }
+}
+
+/* responsive to 480px wide screen */
+@media screen and (max-width: 481px) {
+    #middleSection {
+        flex-direction: column;
+    }
+    #blueShawl {
+        width: 70%;
+        margin: 0px;
+        margin-top: 3%;
+    }
+
+    #featuredItems {
+        width: 70%;
+        margin: 0px;
+        margin-top: 3%;
+        align-self: center;
+    }
+    #tableSection {
+        width: 80%;
+        margin: 3% auto;
+    }
+
+    #tableSection table {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #imageSection img {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,160 @@
+
+html {
+    font-family: sitka banner;
+    padding: 0px;
+}
+
+/* body section */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1B5110;
+}
+
+main{
+    width: 100%
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin: 20px 0;
+}
+
+/*Styling for the profile blocks*/
+.profile-block {
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    background-color: #e8e4b5;
+    box-shadow: 0 2px 4px #e8e4b5;
+    border-radius: 30px;
+}
+
+/*Styling for the about us pictures*/
+.profile-block img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+
+/*Styling for the text block*/
+.text-block {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #e8e4b5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+/*Styling for the text block2*/
+.text-block2 {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #e8e4b5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 40px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+    color: #1B5110;
+}
+
+/*H2 styling for the text blocks*/
+.text-block h2 {
+    color: #1b5110;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+/*Media screen for max 480px*/
+@media screen and (max-width: 480px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .navLink {
+        margin: 5px;
+    }
+
+    #links {
+        margin-left: 0;
+    }
+
+    .profile-container {
+        justify-content: center;
+    }
+
+    .profile-block {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .profile-block img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        height: 40px;
+    }
+}
+
+/*Media screen responsibility for screens between 481px and 720px*/
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .navLink {
+        margin: 5px;
+    }
+
+    #links {
+        margin-left: 0;
+    }
+
+    .profile-container {
+        justify-content: center;
+    }
+
+    .profile-block {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .profile-block img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        height: 40px;
+    }
+}
+
+/*Media screen for devices with min 721px and max 1080px*/
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+    .profile-container {
+        justify-content: space-between;
+    }
+
+    .profile-block {
+        width: 30%;
+        margin: 10px;
+    }
+
+    .profile-block img {
+        width: 150px;
+        height: 150px;
+    }
+}

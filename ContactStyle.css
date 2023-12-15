@@ -1,0 +1,149 @@
+
+main {
+    width: 100%;
+}
+
+/* Applies to the top half of the page */
+.topHalf {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+/* Makes flex boxes in the content area */
+.contactFlex {
+    display: flex;
+    justify-content: start;
+}
+
+/* Applies to the section that holds the image */
+#image {
+    padding: 5%;
+    width: 50%;
+}
+
+/* Applies to the image */
+#greenKnot {
+    width: 100%;
+}
+
+/* Applies to the header for the contact us section */
+.header {
+    background-color: #E8E4B5;
+    font-size: 36pt;
+    white-space: nowrap;
+    padding: 10% 15%;
+    align-self: center;
+    color: #1B5110;
+    border-radius: 30px;
+}
+
+/* Creates a flex box that goes in the column direction for the content */
+.contactFlexCol {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Applies to the actual contact info */
+.contactInfo {
+    border: 5px #E8E4B5 solid;
+    padding: 1%;
+    margin: 10%;
+    width: 50%;
+    height: 80%;
+    margin-bottom: 0px;
+}
+
+/* Applies to the text in the contact info */
+.info {
+    font-size: 20pt;
+    color:#E8E4B5;
+}
+
+/* Applies to the bottom half of the page */
+.bottomHalf {
+    padding: 10%;
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Applies to the form */
+#form {
+    align-self: center;
+}
+
+/* Applies to the fieldsets */
+fieldset {
+    width: 80%;
+    border: 5px #E8E4B5 solid;
+    color: #E8E4B5;
+    align-self: center;
+    margin: 0px 40%;
+}
+
+/* Applies to the fieldset legends */
+legend {
+    font-size: 36pt;
+    text-align: center;
+}
+
+/* Applies to the input elements */
+input {
+    margin: 3%;
+}
+
+/* Applies to the list elements */
+ul {
+    list-style: none;
+}
+
+/* Applies to the labels and list items */
+label, li{
+    font-size: 20pt;
+}
+
+/* Applies to the submit section */
+.submit {
+    align-self: center;
+    border: none;
+}
+
+/* Creates Responsiveness for when the screen is below a width of 1081px */
+@media screen and (max-width: 1081px) {
+
+    fieldset {
+        margin: 0px 20%;
+    }
+}
+
+/* Creates responsiveness for when the screen is below a width of 721px; */
+@media screen and (max-width: 721px) {
+    #greenKnot {
+        width: 0px;
+    }
+
+    #image {
+        width: 0px;
+        margin: 0px 2%;
+    }
+
+    fieldset {
+        margin: 0px 10%;
+    }
+}
+
+/* Creates responsiveness for when the screen is below a width of 481px */
+@media screen and (max-width: 481px) {
+    .contactInfo {
+        width: 90%;
+        margin: 5%;
+        margin-left: 0%;
+        margin-right: 12%;
+    }
+
+    fieldset {
+        margin: 0% 5%;
+    }
+}
